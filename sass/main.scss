@@ -1,0 +1,17 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+@import "./blocks/logo";
+@import "./blocks/popup-info";
+@import "./blocks/result-box";
+
+
+// sections
+
+@import "./sections/home";
+@import "./sections/quiz-section";
+
+@import "./sections/footer";

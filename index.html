@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Стартовый шаблон</title>
+
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+
+	</head>
+	<body>
+		<main class="main">
+			<div class="container">
+
+				<section class="quiz-section">
+					<div class="quiz-box" id="quiz-box">
+						<div class="quiz-box__header">
+							<div class="quiz-box__score">Счёт 0 / 5</div>
+						</div>
+						<h2 class="quiz-box__question">Откуда этот Банан</h2>
+						<div class="quiz-box__body" id="quiz-body">
+							<!-- <div class="quiz-box__img">
+								<img src="./img/Banan.jpg" alt="">
+							</div>
+							<ul class="quiz-box__options">
+								<li class="quiz-box__option">Lorem, ipsum dolor.</li>
+								<li class="quiz-box__option">Lorem, ipsum dolor.</li>
+								<li class="quiz-box__option">Lorem, ipsum dolor.</li>
+								<li class="quiz-box__option">Lorem, ipsum dolor.</li>
+							</ul> -->
+						</div>
+						<div class="quiz-box__footer">
+							<div class="quiz-box__total">1 из 5 вопросов</div>
+							<button class="quiz-box__btn-next" data-next-btn>Следующий вопрос</button>
+						</div>
+					</div>
+
+					<div class="result-box" id="result-box">
+						<h2 class="result-box__title">Ваш результат</h2>
+
+						<div class="result-box__percentage-container">
+							<div class="result-box__circular-progress">
+								<span class="result-box__progress-value">0%</span>
+							</div>
+
+							<div class="result-box__score">Ваш результат 0 из 3</div>
+
+						</div>
+
+						<div class="result-box__buttons">
+							<button data-try-btn class="result-box__button-tryAgain">Попробовать снова</button>
+							<button data-home class="result-box__button-home">Вернуться назад</button>
+						</div>
+
+					</div>
+
+
+				</section>
+
+
+				<section class="home">
+					<div class="home__content">
+						<h1 class="home__title">Mem Quiz</h1>
+						<!-- <button class="home__btn" data-start-btn>Время квиза</button> -->
+						<button class="home__btn" data-start-btn>
+							<img src="./img/startBtn.jpg" alt="">
+							<span>Начьните</span>
+						</button>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<div class="popup-info" id="popup-info">
+			<div class="popup-info__content">
+				<h2 class="popup-info__title">Quiz гайд</h2>
+				<div class="popup-info__rules">
+					<div class="popup-info__rule">Сломай свой страх, иначе он сломает тебя.</div>
+					<div class="popup-info__rule">Совсем не важно как ты ударишь, а важно какой держишь удар</div>
+					<div class="popup-info__rule">Время не просто, оно просто время.</div>
+					<div class="popup-info__rule">Если ты испытываешь проблемы в пути, возможно, ты просто толстый и тебе тяжело идти.</div>
+					<div class="popup-info__rule">Я уничтожу всех титанов!</div>
+				</div>
+				<div class="popup-info__btns">
+					<button class="popup-info__btn-exit" data-exit-btn>Выход</button>
+					<a href="#!" class="popup-info__btn-continue" >Продолжить</a>
+				</div>
+			</div>
+		</div>
+		<script src="./js/questions.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>

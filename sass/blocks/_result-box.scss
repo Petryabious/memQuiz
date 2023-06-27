@@ -1,0 +1,118 @@
+.result-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    color: #fff;
+
+    max-width: 500px;
+    width: 100%;
+    background: transparent;
+    // border: 2px solid #c40094;
+    border: 2px solid #00abf0;
+    border-radius: 6px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+
+    &.active{
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+}
+.result-box__title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.result-box__percentage-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.result-box__circular-progress {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(#c40094 3.6deg, rgba(255, 255, 255, 0.1) 0deg);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 210px;
+        height: 210px;
+        background: #09001d;
+        border-radius: 50%;
+    }
+}
+.result-box__progress-value {
+    position: relative;
+    font-size: 45px;
+    font-weight: 600;
+}
+.result-box__score {
+    font-size: 26px;
+    font-weight: 600;
+}
+.result-box__buttons {
+
+    display: flex;
+    gap: 20px;
+
+    button{
+        width: 130px;
+        height: 47px;
+        color: #fff;
+        // background: #c40094;
+        // border: 2px solid #c40094;
+        background: #00abf0;
+        border: 2px solid #00abf0;
+        border-radius: 6px;
+
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+
+        transition: .5s;
+
+        &:nth-child(1){
+            &:hover{
+                background: #950170;
+                border-color: #950170;
+            }
+        }
+
+        &:nth-child(2){
+            background: transparent;
+            // color: #c40094;
+            color: #00abf0;
+
+            &:hover{
+                color: #fff;
+                background: #c40094;
+                border-color: #c40094;
+            }
+        }
+    }
+}
+.result-box__button-tryAgain {
+}
+.result-box__button-home {
+   
+}
