@@ -122,30 +122,24 @@ let questions = [
     },
 ]
 
-let questions2 = [];
 
 function randowNumber(){
     return Math.floor(Math.random() * questions.length);
 }
 
-// while(true){
 
-//     if(questions2.length===questions.length){
-//         break;
-//     }
-
-//     if (!questions2.includes(questions[randowNumber()])) {
-//         questions2.push(questions[randowNumber()]);
-//     }
-// }
-
-while(questions2.length < questions.length){
-    let randomNum = randowNumber();
-
-    if(questions2.indexOf(questions[randomNum])===-1){
-        questions2.push(questions[randomNum]);
+let questions2 = [];
+function mixQuestions(){
+    while(questions2.length < questions.length){
+        let randomNum = randowNumber();
+    
+        if(questions2.indexOf(questions[randomNum])===-1){
+            questions2.push(questions[randomNum]);
+        }
     }
+    
+    questions = [...questions2];
 }
 
-questions = [...questions2];
+
 

@@ -20,6 +20,7 @@ let userScore = 0;
 startBtn.addEventListener('click', ()=>{
     popupInfo.classList.add('active');
     main.classList.add('active');
+    mixQuestions();
 })
 
 exitBtn.addEventListener('click', ()=>{
@@ -102,6 +103,7 @@ continueBtn.addEventListener('click', ()=>{
     questionCounter(1);
     headerScore();
     
+    
 })
 
 
@@ -166,6 +168,7 @@ tryAgainBtn.addEventListener('click', ()=>{
     showQuestions(questionCount);
     questionCounter(questionNum);
     headerScore();
+    mixQuestions();
 })
 // кнопка выход на первую страницу
 homeBtn.addEventListener('click', ()=>{
