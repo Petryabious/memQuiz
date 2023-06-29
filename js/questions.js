@@ -130,65 +130,40 @@ function randowNumber(maxValue){
 
 let questions = [];
 
-// function mixQuestions(){
-//     while(questions2.length < questions.length){
-//         let randomNum = randowNumber();
-    
-//         if(questions2.indexOf(questions[randomNum])===-1){
-//             console.log(!questions2.includes(questions[randomNum]))
-//             questions2.push(questions[randomNum]);
-//         }
-//     }
-    
-//     questions = [...questions2];
-// }
+
+function mixArray(currentArr, lenOfArray){
+    let randomNum = randowNumber(lenOfArray);
+    let newArray = [];
+
+    while(newArray.length< currentArr.length){
+        if (!newArray.includes(currentArr[randomNum])) {
+            newArray.push(currentArr[randomNum])
+        }
+    randomNum = randowNumber(lenOfArray);
+}
+    return newArray;
+
+}
 
 function mixQuestions(){
     clearQuestions();
-    let randomNum = randowNumber(questionsOrigin.length);
 
-    while(questions.length < questionsOrigin.length){
-        if(!questions.includes(questionsOrigin[randomNum])){
-
-            questions.push(questionsOrigin[randomNum]);
-        }
-
-        randomNum = randowNumber(questionsOrigin.length);
-    }
+    questions = mixArray(questionsOrigin, questionsOrigin.length)
 
     questions = questions.map(item =>{
         return {
             ...item,
-            options: [...mixOptions(item.options)],
+            options: [...mixArray(item.options, item.options.length)],
         }
     })
-    // questions.forEach(item => console.log({...item, options: mixOptions(item.options)}))
-
-    
 }
 
 function clearQuestions(){
     questions.splice(0, questions.length);
 }
 
-
-function mixOptions(options){
-    let randomNum = randowNumber(options.length);
-    let newOptions = [];
-
-    while(newOptions.length< options.length){
-        if (!newOptions.includes(options[randomNum])) {
-            newOptions.push(options[randomNum])
-        }
-        randomNum = randowNumber(options.length);
-    }
-
-    // options = [...newOptions]
-    return newOptions;
-}
-
-
 mixQuestions()
 
 
-// mixQuestions();
+
+
