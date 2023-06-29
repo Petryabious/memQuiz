@@ -1,4 +1,4 @@
-let questions = [
+let questionsOrigin = [
     {
         question:'Что один из них показал?',
         img: '1',
@@ -123,23 +123,72 @@ let questions = [
 ]
 
 
-function randowNumber(){
-    return Math.floor(Math.random() * questions.length);
+function randowNumber(maxValue){
+    return Math.floor(Math.random() * maxValue);
 }
 
 
-let questions2 = [];
+let questions = [];
+
+// function mixQuestions(){
+//     while(questions2.length < questions.length){
+//         let randomNum = randowNumber();
+    
+//         if(questions2.indexOf(questions[randomNum])===-1){
+//             console.log(!questions2.includes(questions[randomNum]))
+//             questions2.push(questions[randomNum]);
+//         }
+//     }
+    
+//     questions = [...questions2];
+// }
+
 function mixQuestions(){
-    while(questions2.length < questions.length){
-        let randomNum = randowNumber();
-    
-        if(questions2.indexOf(questions[randomNum])===-1){
-            questions2.push(questions[randomNum]);
+    clearQuestions();
+    let randomNum = randowNumber(questionsOrigin.length);
+
+    while(questions.length < questionsOrigin.length){
+        if(!questions.includes(questionsOrigin[randomNum])){
+
+            questions.push(questionsOrigin[randomNum]);
         }
+
+        randomNum = randowNumber(questionsOrigin.length);
     }
+
+    questions = questions.map(item =>{
+        return {
+            ...item,
+            options: [...mixOptions(item.options)],
+        }
+    })
+    // questions.forEach(item => console.log({...item, options: mixOptions(item.options)}))
+
     
-    questions = [...questions2];
+}
+
+function clearQuestions(){
+    questions.splice(0, questions.length);
 }
 
 
+function mixOptions(options){
+    let randomNum = randowNumber(options.length);
+    let newOptions = [];
 
+    while(newOptions.length< options.length){
+        if (!newOptions.includes(options[randomNum])) {
+            newOptions.push(options[randomNum])
+        }
+        randomNum = randowNumber(options.length);
+    }
+
+    // options = [...newOptions]
+    return newOptions;
+}
+
+
+mixQuestions()
+
+
+// mixQuestions();
