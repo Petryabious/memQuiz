@@ -544,6 +544,9 @@ body {
   left: 0;
   padding: 15px;
 }
+.quiz-section.active body, .quiz-section.active .main {
+  overflow-y: auto;
+}
 
 .quiz-box {
   position: relative;

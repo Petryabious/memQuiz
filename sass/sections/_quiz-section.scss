@@ -18,6 +18,10 @@
     &.active{
         left: 0;
         padding: 15px;
+
+        body, .main{
+            overflow-y: auto;
+        } 
     }
 }
 
@@ -50,6 +54,7 @@
         transform: scale(1);
         transition: 1s ease;
         transition-delay: 1s;
+        
     }
 
     @media (max-width: 630px) {
