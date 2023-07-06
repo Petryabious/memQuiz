@@ -120,6 +120,94 @@ let questionsOrigin = [
             'Ольга'
         ]
     },
+    {
+        question:'Нет ничего важнее ...',
+        img: 'VinDrosel',
+        answer:'Семьи',
+        options:[
+            'Бизнеса',
+            'Денег',
+            'Семьи',
+            'Мемов'
+        ]
+    },
+    {
+        question:'Что скрывает этот молодой человек?',
+        img: 'garold',
+        answer:'Боль',
+        options:[
+            'Счастье',
+            'Возраст',
+            'Боль',
+            'Деньги'
+        ]
+    },
+    {
+        question:'Какой породы собаки с мема «Качок Доге и Чимс»?',
+        img: 'Doge',
+        answer:'Сиба-ину',
+        options:[
+            'Корги',
+            'Сиба-ину',
+            'Сараби',
+            'Акита-ину'
+        ]
+    },
+    {
+        question:'Как зовут этого кота?',
+        img: 'bender',
+        answer:'Бендер',
+        options:[
+            'Степан',
+            'Бендер',
+            'Пушок',
+            'Саша Белый'
+        ]
+    },
+    {
+        question:'Когда-то и меня вела дорога приключений... А потом мне прострелили ...',
+        img: 'knee',
+        answer:'Колено',
+        options:[
+            'Руку',
+            'Бедро',
+            'Колено',
+            'Мозг'
+        ]
+    },
+    {
+        question:'Какую фразу он сказал?',
+        img: 'fuckYou',
+        answer:'Fuck you',
+        options:[
+            'Boy next door',
+            'Fuck you',
+            'Deep dark fantasy',
+            'Boss of this gym'
+        ]
+    },
+    {
+        question:'Fisting is ...',
+        img: '300',
+        answer:'300 bucks',
+        options:[
+            '300 rubles',
+            '300 dollars',
+            '300 bucks',
+            '300 tenge'
+        ]
+    },
+    // {
+    //     question:'Fisting is ...',
+    //     img: '300',
+    //     answer:'300 bucks',
+    //     options:[
+    //         '300 rubles',
+    //         '300 dollars',
+    //         '300 bucks',
+    //         '300 tenge'
+    //     ]
+    // },
 ]
 
 
