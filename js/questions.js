@@ -197,17 +197,138 @@ let questionsOrigin = [
             '300 tenge'
         ]
     },
-    // {
-    //     question:'Fisting is ...',
-    //     img: '300',
-    //     answer:'300 bucks',
-    //     options:[
-    //         '300 rubles',
-    //         '300 dollars',
-    //         '300 bucks',
-    //         '300 tenge'
-    //     ]
-    // },
+    {
+        question:'Кто это?',
+        img: 'billy',
+        answer:'Billy Herrington',
+        options:[
+            'Ricardo Milos',
+            'Billy Herrington',
+            'Steve Rambo',
+            'Van Darkholme'
+        ]
+    },
+    {
+        question:'Кто зовут этого гениального танцора?',
+        img: 'ricardo',
+        answer:'Ricardo Milos',
+        options:[
+            'Milla Jovovich',
+            'Ricardo Milos',
+            'Raoul Max Trujillo',
+            'Michael Jackson'
+        ]
+    },
+    {
+        question:'Что изображено на фотографии?',
+        img: 'evolution',
+        answer:'Теория эволюция Дарвина',
+        options:[
+            'Теория эволюция Дарвина',
+            'Теория большого взрыва',
+            'Raoul Max Trujillo',
+            'Michael Jackson'
+        ]
+    },
+    {
+        question:'Какое заклинание изображено?',
+        img: 'vvv',
+        answer:'Вжух',
+        options:[
+            'Каве инимикум',
+            'Вжух',
+            'Квен',
+            'Дореме интеримо адапаре дориме'
+        ]
+    },
+    {
+        question:'Omae wa mou shindeiru',
+        img: 'nani',
+        answer:'Nani?',
+        options:[
+            'Nani?',
+            'Nine?',
+            'Neun?',
+            'Nico?'
+        ]
+    },
+    {
+        question:'Show Me Your ...',
+        img: 'vergil',
+        answer:'Motivation',
+        options:[
+            'Motivation',
+            'Movement',
+            'Move your body',
+            'Вьетнамское телевидение'
+        ]
+    },
+    {
+        question:'Какую фразу он сказал, когда был в самолёте?',
+        img: 'hereOfToilet',
+        answer:'Я не умру в туалете',
+        options:[
+            'Я не умру в туалете',
+            'Бургер кинг говно',
+            'Павел Дуров верни стену',
+            'Всего хорошего'
+        ]
+    },
+    {
+        question:'Легендарная фраза этого джентльмена?',
+        img: 'casino',
+        answer:'Ебаный рот этого казино',
+        options:[
+            'Ебаный рот этого казино',
+            'Я в своем познании настолько преисполнился',
+            'Русские Идут',
+            'Дерни этот тапок'
+        ]
+    },
+    {
+        question:'Как называлась эта легендарная рок-группа?',
+        img: 'ranetki',
+        answer:'Ранетки',
+        options:[
+            'Ранетки',
+            'Сектор газа',
+            'Градусы',
+            'Верните мне мой 2007'
+        ]
+    },
+    {
+        question:'Какое историческое событие изображено на картинке?',
+        img: 'warVSlizards',
+        answer:'Война древних русов с ящерами',
+        options:[
+            'Война древних русов с ящерами',
+            'Война древних русов с диназаврами',
+            'Война древних русов с рептилоидами',
+            'Война древних русов с русами'
+        ]
+    },
+    {
+        question:'Как его зовут?',
+        img: 'Cumberbatch',
+        answer:'Бенедикт Камбербэтч',
+        options:[
+            'Бенедикт Камбербэтч',
+            'Бенедикт Кукумбер',
+            'Базелик Киберскотч',
+            'Батлфилд Овервотч'
+        ]
+    },
+    {
+        question:'Кто это?',
+        img: 'capybara',
+        answer:'Капибара',
+        options:[
+            'Капибара',
+            'Карбюратор',
+            'Карбонара',
+            'Wasserschwein'
+        ]
+    },
 ]
 
 
