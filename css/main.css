@@ -544,9 +544,6 @@ body {
   left: 0;
   padding: 15px;
 }
-.quiz-section.active body, .quiz-section.active .main {
-  overflow-y: auto;
-}
 
 .quiz-box {
   position: relative;
@@ -655,7 +652,7 @@ body {
 }
 @media (max-width: 630px) {
   .quiz-box__img {
-    padding: 0 0 50% 0;
+    padding: 0 0 45% 0;
   }
 }
 
