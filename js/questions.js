@@ -166,7 +166,7 @@ let questionsOrigin = [
     },
     {
         question:'Когда-то и меня вела дорога приключений... А потом мне прострелили ...',
-        img: 'knee',
+        img: 'knee2',
         answer:'Колено',
         options:[
             'Руку',
@@ -222,12 +222,12 @@ let questionsOrigin = [
     {
         question:'Что изображено на фотографии?',
         img: 'evolution',
-        answer:'Теория эволюция Дарвина',
+        answer:'Я в ахуе',
         options:[
             'Теория эволюция Дарвина',
             'Теория большого взрыва',
-            'Raoul Max Trujillo',
-            'Michael Jackson'
+            'Я в ахуе',
+            'Теория о происхождении рептилоидов'
         ]
     },
     {
@@ -298,7 +298,7 @@ let questionsOrigin = [
     },
     {
         question:'Какое историческое событие изображено на картинке?',
-        img: 'warVSlizards',
+        img: 'warVSlizards2',
         answer:'Война древних русов с ящерами',
         options:[
             'Война древних русов с ящерами',
