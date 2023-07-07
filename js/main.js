@@ -13,6 +13,10 @@ const homeBtn = document.querySelector('[data-home]');
 const nextBtn = document.querySelector('[data-next-btn]');
 const quizBody = document.getElementById('quiz-body');
 
+const container = document.querySelector('.container');
+
+
+
 let questionCount = 0;
 let questionNum = 1;
 let userScore = 0;
@@ -98,6 +102,9 @@ continueBtn.addEventListener('click', ()=>{
     main.classList.remove('active');
     quizBox.classList.add('active');
 
+    container.classList.add('active');
+    
+
     showQuestions(0);
     questionCounter(1);
     headerScore();
@@ -174,6 +181,8 @@ homeBtn.addEventListener('click', ()=>{
     quizSection.classList.remove('active');
     resultBox.classList.remove('active');
     nextBtn.classList.remove('active');
+
+    container.classList.remove('active');
     
     questionCount = 0;
     questionNum = 1;

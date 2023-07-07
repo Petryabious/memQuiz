@@ -110,6 +110,11 @@ body {
   height: 100vh;
   overflow-y: auto;
 }
+@media (max-width: 630px) {
+  .container.active {
+    height: auto;
+  }
+}
 
 /* Utility */
 .none {
@@ -138,6 +143,12 @@ body {
   -webkit-filter: blur(15px);
           filter: blur(15px);
   pointer-events: none;
+}
+@media (max-width: 630px) {
+  .main {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
 .popup-info {

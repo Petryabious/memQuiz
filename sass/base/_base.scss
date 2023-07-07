@@ -32,6 +32,14 @@ section {
 
     overflow-y: auto;
 
+    @media (max-width: 630px) {
+
+        &.active{
+            height: auto;
+        }
+    }
+
+
 }
 
 /* Utility */
@@ -61,5 +69,8 @@ section {
         pointer-events: none;
     }
 
-  
+    @media (max-width: 630px) {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 }
