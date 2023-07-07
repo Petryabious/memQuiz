@@ -603,6 +603,11 @@ body {
   color: #fff;
   border-radius: 6px;
 }
+@media (max-width: 630px) {
+  .quiz-box__score {
+    font-size: 12px;
+  }
+}
 
 .quiz-box__question {
   margin-bottom: 50px;
@@ -614,8 +619,9 @@ body {
 }
 @media (max-width: 630px) {
   .quiz-box__question {
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 10px;
   }
 }
 
@@ -653,7 +659,7 @@ body {
 }
 @media (max-width: 630px) {
   .quiz-box__img {
-    padding: 0 0 55% 0;
+    padding: 0 0 50% 0;
   }
 }
 
