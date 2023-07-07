@@ -544,7 +544,6 @@ body {
 .quiz-section.active {
   left: 0;
   padding: 15px;
-  padding-top: 150px;
 }
 
 .quiz-box {
